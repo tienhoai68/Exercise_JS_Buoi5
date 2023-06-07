@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>bài tập js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- font gg -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="container mt-5 content__item">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#bai1">Bài 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai2">Bài 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai3">Bài 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai4">Bài 4</a>
+            </li>
+          </ul>
+          
+          <!-- Tab panes -->
+          <!-- tính điểm sinh viên -->
+          <div class="tab-content">
+            <div class="tab-pane container active" id="bai1">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-solid fa-school"></i></span> Quản lý tuyển sinh</h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Nhập vào thông tin </label>
+                                      <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <input type="text" name="" id="diemChuan" class="form-control" placeholder="Điểm chuẩn">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <select name="" id="khuVuc" class="form-control">
+                                                <option value="">Chọn khu vực</option>
+                                                <option value="2">A</option>
+                                                <option value="1">B</option>
+                                                <option value="0.5">C</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <select name="" id="diemDoiTuong" class="form-control">
+                                                <option value="">Chọn đối tượng</option>
+                                                <option value="2.5">1</option>
+                                                <option value="1.5">2</option>
+                                                <option value="1.0">3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mt-lg-3">
+                                            <input type="text" name="" id="diemThuNhat" class="form-control" placeholder="Nhập điểm thứ 1">
+                                        </div>
+                                        <div class="col-12 col-lg-4 mt-lg-3">
+                                            <input type="text" name="" id="diemThuHai" class="form-control" placeholder="Nhập điểm thứ 2">
+                                        </div>
+                                        <div class="col-12 col-lg-4 mt-lg-3">
+                                            <input type="text" name="" id="diemThuBa" class="form-control" placeholder="Nhập điểm thứ 3">
+                                        </div>
+                                      </div>                    
+                                    </div>
+                                    <button id="ketQua" class="btn btn-success">Kết Quả</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span id="ketQuaDauRot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tính tiền điện -->
+            <div class="tab-pane container fade" id="bai2">
+                <div class="content">          
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3><span><i class="fa-solid fa-money-bill-transfer"></i></span> Tính tiền điện</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                      <label for=""><span><i class="fa-solid fa-user"></i></span> Nhập vào họ tên</label>
+                                      <input type="text" name="" id="hoTen" class="form-control" placeholder="Nhập vào họ tên">
+                                    </div>       
+                                    <div class="form-group">
+                                        <label for=""><span><i class="fa-solid fa-battery-half"></i></span> Nhập vào số Kw</label>
+                                        <input type="text" name="" id="soKw" class="form-control" placeholder="Nhập vào số Kw">
+                                      </div>                           
+                                    <button id="tinhTienDien" class="btn btn-success">Tính tiền điện</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span id="ketQuaTienDien" ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tính thuế -->
+            <div class="tab-pane container fade" id="bai3">
+                <div class="content">          
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3><span><i class="fa-solid fa-sack-dollar"></i></span> Tính thuế thu nhập cá nhân</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form_group row">
+                                        <div class="col-12 col-lg-4 mt-lg-3 mt-2">
+                                            <input type="text" name="" id="hoVaTen" class="form-control" placeholder="Họ và Tên">
+                                        </div>
+                                        <div class="col-12 col-lg-4 mt-lg-3 mt-2">
+                                            <input type="number" name="" id="tongThuNhap" class="form-control" placeholder="Tổng Thu Nhập Năm">
+                                        </div>
+                                        <div class="col-12 col-lg-4 mt-lg-3 mt-2">
+                                            <input type="text" name="" id="nguoiPhuThuoc" class="form-control" placeholder="Số người phụ thuộc">
+                                        </div>
+                                    </div>                                    
+                                    <button id="tinhTienThue" class="btn btn-success mt-3">Tính tiền thuế</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span id="ketQuaThue" ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="bai4">
+                <div class="content">          
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3><span><i class="fa-solid fa-money-bill-transfer"></i></span> Tính tiền cáp</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form_group row">
+                                        <div class="col-12 col-lg-4 mt-lg-3 mt-2">
+                                            <select name="" id="loaiKhachHang" class="form-control" onchange = "hienSoKetNoi()">
+                                                <option value="">Chọn loại khách hàng</option>
+                                                <option value="personal">Nhà dân</option>
+                                                <option value="business">Doanh nghiệp</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mt-lg-3 mt-2">
+                                            <input type="text" name="" id="maKhachHang" class="form-control" placeholder="Nhập mã khách hàng">
+                                        </div>
+                                        <div class="col-12 col-lg-4 mt-lg-3 mt-2">
+                                            <input type="text" name="" id="kenhCaoCap" class="form-control" placeholder="Số kênh cao áp">
+                                        </div>
+                                        <div class="col-12 col-lg-4 mt-lg-3 mt-2">
+                                            <input type="text" name="" id="soKetNoi" class="form-control" placeholder="Số kết nối" style="display: none;">
+                                        </div>
+                                    </div>                                    
+                                    <button id="tinhTienCap" class="btn btn-success mt-3">Tính tiền cáp</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span id="ketQuaTienCap" ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+          </div>
+    </div>
+  
+
+
+
+
+    
+
+
+
+
+
+
+
+    <!-- JS Main -->
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

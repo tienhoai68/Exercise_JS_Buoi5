@@ -1,0 +1,46 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content {
+    margin-top: 5rem;
+}
+.content__item .nav {
+    margin-top: 10rem;
+}
+.content__item .nav-pills  a.nav-link {
+    color: #041526;
+    font-size: 16px;
+    font-weight: 400;
+}
+.content__item .nav-pills .nav-link.active {
+    color: #fff;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+}
+.content__item .card-header {
+    background-color: #ffc949;
+}
+.content__item .card-header h3 {
+    color: #333;
+}
+.content__item .card-body button {
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    border: none;
+    transition: all 0.5s;
+}
+.content__item .card-body button:hover {
+    background-position: right center;
+}
+.content__item .card-footer i {
+    color: #ff6e65;
+}
+.content__item .card-item .form-control{
+    margin-top: 8px;
+}
